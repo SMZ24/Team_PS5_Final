@@ -49,7 +49,34 @@ The system uses a menu-driven interface with the following capabilities:
 
 ---
 
-## **4. Algorithmic Sources**
+## **4. Error Handling**
+
+The system includes robust error handling to ensure stability and a user-friendly experience.
+
+### **Input Validation**
+
+* **Numeric validation:**
+
+  * `getIntInput` and `getFloatInput` ensure IDs and grades are valid numeric values.
+* **String validation:**
+
+  * `isValidName` checks that names contain only letters, spaces, or hyphens.
+  * `isValidCourse` ensures course codes are alphanumeric.
+
+### **File Operations**
+
+* Validates whether files open correctly before reading/writing.
+* If files fail to open, the program informs the user without crashing.
+
+### **Tree Operations**
+
+* **Duplicate IDs:** Inserts check for existing IDs to prevent duplicates.
+* **Missing Records:** Search, update, and delete operations handle nonexistent IDs gracefully with clear feedback.
+
+---
+
+
+## **5. Algorithmic Sources**
 
 Standard AVL Tree algorithms were referenced during development.
 
@@ -75,7 +102,7 @@ Standard AVL Tree algorithms were referenced during development.
 
 ---
 
-## **5. How to Build and Run**
+## **6. How to Build and Run**
 
 ### **Prerequisites**
 
@@ -109,7 +136,7 @@ grade_system.exe
 
 ---
 
-## **6. About**
+## **7. About**
 
 * **Author:** PS5
 * **Course:** CSC 307 – Data Structures and Algorithm Analysis
